@@ -21,6 +21,7 @@ namespace API.Extensions
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequireUppercase = false;
                 options.Password.RequireLowercase = false;
+                options.User.RequireUniqueEmail = true;
             });
 
             builder = new IdentityBuilder(builder.UserType, builder.Services);
